@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Layout</title>
+    <meta content="width=device-width, height=device-height, initial-scale=1.0" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 1000px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: #efefef;
+        }
+
+        .container {
+            box-sizing: border-box;
+            height: 100%;
+            width: 450px;
+            max-width: 100%;
+            background: #ffffff;
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        header {
+            width: 100%;
+            height: 150px; /* fixed height */
+            margin-top: 30px;
+            margin-bottom: 15px; /* fixed margin */
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+       .rectangle {
+            background: linear-gradient(to bottom, #DDE0FF, #f1f2ff); 
+            width: 100%;
+            height: 150px; /* fixed height */
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 80px; 
+            margin-bottom: 5px;
+            box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.1);
+        }
+
+        .rectangle2 {
+            background: linear-gradient(to bottom, #fcf4da, #fffbee);
+            width: 100%;
+            height: 150px; /* fixed height */
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .rectangle3 {
+            background: linear-gradient(to bottom, #d9ffd9, #f6fff6);
+            width: 100%;
+            height: 150px; /* fixed height */
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .rectangle-content {
+            margin-top: 0px;
+        }
+
+        .button {
+            width: 110px;
+            height: 45px;
+            background: #225848;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 60px; 
+        }
+
+        .button:hover {
+            background: #000000;
+        }
+    </style>
+
+</head>
+<body>
+      <div class="container">
+            <div>
+                  <header>
+                        <img src="foodQ.png" alt="Your image">
+                        <h3>자신의 건강상태에 맞춰 <br>
+                            나만의 맞춤 영양제를 추천해드려요. <br>
+                            분석은 아래와 같이 진행됩니다.<br>
+                            아래 분석 시작하기 버튼을 눌러주세요!
+                        </h3>
+                    </header>
+            </div>
+
+            <div  class="rectangle">
+          <!-- <div style="margin-top: 500px;" class="rectangle"> -->
+              <h2>Step1. 영양 상태 분석(소요 시간 5분)</h2>
+  
+              <div class="rectangle-content">
+                  <p style="padding: 0px 10px;">면밀한 영양 상태 분석을 통해 현재 영양 상태, 맞춤 권장 영양소, 개선 사항 등을 알려드려요.</p>
+              </div>
+          </div>
+  
+          <div class="rectangle2">
+              <h2>Step2. 분석 결과 안내</h2>
+  
+              <div class="rectangle-content">
+                  <p style="padding: 0px 10px;">분석 결과를 통해 건강 개선이 필요한 부분에 대한 내용과 그에 맞는 영양소 항목을 보여드려요.</p>
+              </div>
+          </div>
+
+          <div class="rectangle3">
+            <h2>Step3. 맞춤 영양제 추천</h2>
+
+            <div class="rectangle-content">
+                <p style="padding: 0px 10px;">건강 고민을 해결해드릴 수 있는 맞춤 영양제를 추천해드려요.</p>
+            </div>
+         </div>
+  
+          <button class="button" onclick="location.href='typeform.html';">
+              <h3>분석 시작하기</h3>
+          </button>
+      </div>
+</body>
+</html>
